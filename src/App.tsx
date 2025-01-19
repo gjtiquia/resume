@@ -1,14 +1,15 @@
 function App() {
   return (
     <article className="
-      h-dvh px-2 py-4 
-      prose prose-invert max-w-3xl
+      h-dvh px-2 py-4
+      prose prose-gray max-w-3xl
       prose-h1:mt-0 prose-h1:mb-4 prose-h1:text-5xl
       prose-h2:mt-0 prose-h2:mb-1 prose-h2:font-extrabold
       prose-h3:mt-0 prose-h3:mb-0 prose-h3:font-bold
       prose-p:my-0 prose-p:leading-normal
       prose-ul:my-0 prose-ul:pl-5 prose-ul:leading-normal prose-ul:list-outside
-      prose-li:my-0 prose-li:p-0
+      prose-li:my-0 prose-li:p-0 
+      text-gray-900
     ">
       <section className="flex flex-col gap-2 md:flex-row md:justify-between md:items-end">
         <div>
@@ -34,44 +35,41 @@ function App() {
         <Item
           title="Game Developer & Code Architect"
           subtitle="Daytech HK Limited"
-          date="June 2023 - Present"
+          date="Jun 2023 - Present"
           descriptions={[
             "Developed and deployed a co-op multiplayer top-down isometric shooter game for mobile",
             "Designed and implemented the architectures for different multiplayer systems",
-            "Major overhauls of various systems to ensure determinism and better client-side prediction",
             "Enforce coding standards, best practices and maintainability, ensuring software robustness",
             "Worked tightly with game designers, providing them with tools for rapid prototyping and iteration",
-            "Collaborated with artists on creating isometric art for the game"
           ]}
         />
         <Item
           title="Junior Game Developer"
           subtitle="Daytech HK Limited"
-          date="June 2022 - July 2023"
+          date="Jun 2022 - Jul 2023"
           descriptions={[
             "Migrated singleplayer desktop PC game to a realtime co-op multiplayer mobile game",
             "Researched and developed procedural map generation systems, increasing game replayability",
           ]}
         />
+        {/* Freelance Web Developer */}
         <Item
           title="Freelance Software Engineer"
-          subtitle="City University of Hong Kong"
-          date="August 2024 - January 2025"
+          subtitle="Binary Tree Studio"
+          date="Aug 2024 - Jan 2025"
           descriptions={[
             "Developed interactive 360-degree cinematic experiences for the City University of Hong Kong",
             "Worked on the integration between generative AI backend and Unity frontend",
-            "Collaborated closely with researchers to ensure the experiences matches research goals",
             "Ported application across different platforms while ensuring robustness and maintainability",
           ]}
         />
         <Item
           title="Freelance Game Developer"
           subtitle="HKAHSS"
-          date="October 2023 - June 2024"
+          date="Oct 2023 - Jun 2024"
           descriptions={[
             "Developed an interactive and educational web game using Unity for secondary students",
             "Worked on the integration between a separate web frontend and the Unity web frontend",
-            "Provided backend solutions for saving player progress across devices",
           ]}
         />
       </section>
@@ -81,7 +79,7 @@ function App() {
         <Item
           title="Bachelor of Mechanical Engineering"
           subtitle="The University of Hong Kong"
-          date="Sept 2018 - July 2022"
+          date="Sep 2018 - Jul 2022"
           descriptions={[
             "First Class Honours | 3x Dean's Honour List | Highest Semester GPA : 3.80 / 4.30",
             "Focuses in Product Development and Manufacturing, Unmanned Aerial Systems",
@@ -93,7 +91,7 @@ function App() {
 
       <section className="my-3">
         <h2>Skills</h2>
-        <ul>
+        <ul className="marker:text-gray-800">
           <li>Programming Languages: C#, JavaScript/TypeScript, C++, Python, HTML, CSS</li>
           <li>Web Technologies: React, Tailwind CSS, Express.js, Deno Fresh, HTMX, Postgres</li>
           <li>Game Development: Unity, Multiplayer Development, AI Behaviour Development</li>
@@ -102,10 +100,12 @@ function App() {
 
       <section className="my-3">
         <h2>Hobbies</h2>
-        <ul>
-          <li>Music, Gaming, Reading, Coding</li>
+        <ul className="marker:text-gray-800">
+          <li>Music, Gaming, Reading, Coding, Basketball, Photography</li>
         </ul>
       </section>
+
+      <div className="py-1"></div>
     </article>
   )
 }
@@ -121,15 +121,15 @@ function Item(props: {
   return (
     <div className="my-1">
       <div className="flex flex-col md:flex-row justify-between text-nowrap">
-        <div className="flex flex-col md:flex-row md:items-center md:gap-2">
+        <div className="flex flex-col md:flex-row md:items-center">
           <h3>{props.title}</h3>
-          <p><span className="hidden md:inline">| </span>{props.subtitle}</p>
+          <p><span className="hidden md:inline md:px-2">|</span><span className="md:italic">{props.subtitle}</span></p>
         </div>
         <div>
           <i>{props.date}</i>
         </div>
       </div>
-      <ul>
+      <ul className="marker:text-gray-800">
         {props.descriptions.map((x, i) => <li key={i}>{x}</li>)}
       </ul>
     </div>
@@ -139,7 +139,7 @@ function Item(props: {
 function GlobeIcon() {
   return (
     <svg
-      className="size-5 fill-slate-100"
+      className="size-5 fill-gray-900"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -151,7 +151,7 @@ function GlobeIcon() {
 function MailIcon() {
   return (
     <svg
-      className="size-5 fill-slate-100"
+      className="size-5 fill-gray-900"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -163,7 +163,7 @@ function MailIcon() {
 function LinkedinIcon() {
   return (
     <svg
-      className="size-5 fill-slate-100"
+      className="size-5 fill-gray-900"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
     >
