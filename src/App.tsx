@@ -32,7 +32,7 @@ function App() {
             </section>
 
             <section className="mt-3 mb-3">
-                <p>Passionate in creating unique experiences through games, web apps and mobile apps. Regardless of the frontend or backend, I find satisfaction in solving problems creatively. I am an engineer, I solve real-world problems. I am an artist, code is my canvas. I am human, passion is my drive.</p>
+                <p>Passionate in creating unique experiences through games, web apps and mobile apps. Whether it is the frontend or the backend, I find satisfaction in learning and solving problems creatively with others. I am an engineer, I solve real-world problems. I am also an artist, where my code is my canvas.</p>
             </section>
 
             <section className="my-3">
@@ -42,7 +42,7 @@ function App() {
                     subtitle="Daytech HK Limited"
                     date="Jun 2023 - Present"
                     descriptions={[
-                        "Developed and deployed a co-op multiplayer top-down isometric shooter game for mobile",
+                        "Deployed 9Cat Saga, a co-op multiplayer top-down isometric 2D shooter game for mobile",
                         "Designed and implemented the architectures for different multiplayer systems",
                         "Enforce coding standards, best practices and maintainability, ensuring software robustness",
                         "Worked tightly with game designers, providing them with tools for rapid prototyping and iteration",
@@ -57,7 +57,15 @@ function App() {
                         "Researched and developed procedural map generation systems, increasing game replayability",
                     ]}
                 />
-                {/* Freelance Web Developer */}
+                <Card
+                    title="Freelance Web Developer"
+                    subtitle="EC-PIN (PILnet)"
+                    date="Dec 2024 - Jan 2025"
+                    descriptions={[
+                        "Developed a web app for calculating employees' compensation claim and personal injuries claim",
+                        "Worked intensively with post-graduate lawyers designing the structure and UX of the calculator",
+                    ]}
+                />
                 <Card
                     title="Freelance Software Engineer"
                     subtitle="Binary Tree Studio"
@@ -86,8 +94,8 @@ function App() {
                     subtitle="The University of Hong Kong"
                     date="Sep 2018 - Jul 2022"
                     descriptions={[
-                        "First Class Honours | 3x Dean's Honour List | Highest Semester GPA : 3.80 / 4.30",
-                        "Focuses in Product Development and Manufacturing, Unmanned Aerial Systems",
+                        "First Class Honours   |   3x Dean's Honour List   |    Highest Semester GPA : 3.80 / 4.30",
+                        "Focus in Product Development and Manufacturing",
                         "Minor in Computer Science. Courses in Game and Mobile App Development, Artificial Intelligence",
                         "Team Captain of HKU Unmanned Aerial Systems Team, leading 30+ people in overseas competitions",
                     ]}
@@ -98,7 +106,7 @@ function App() {
                 <h2>Skills</h2>
                 <ul className="marker:text-gray-800">
                     <li>Programming Languages: C#, JavaScript/TypeScript, C++, Python, HTML, CSS</li>
-                    <li>Web Technologies: React, Tailwind CSS, Express.js, Deno Fresh, HTMX, Postgres</li>
+                    <li>Web Technologies: React, Tailwind CSS, Express.js, Deno Fresh, HTMX, Postgres, Docker</li>
                     <li>Game Development: Unity, Multiplayer Development, AI Behaviour Development</li>
                 </ul>
             </section>

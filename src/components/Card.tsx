@@ -6,7 +6,7 @@ export function Card(props: {
 }) {
     return (
         <div className="my-1">
-            <div className="flex flex-col md:flex-row justify-between text-nowrap">
+            <div className="flex flex-col md:flex-row md:items-center justify-between text-nowrap">
                 <div className="flex flex-col md:flex-row md:items-center">
                     <h3>{props.title}</h3>
                     <p><span className="hidden md:inline md:px-2">|</span><span className="md:italic">{props.subtitle}</span></p>
@@ -16,7 +16,9 @@ export function Card(props: {
                 </div>
             </div>
             <ul className="marker:text-gray-800">
-                {props.descriptions.map((x, i) => <li key={i}>{x}</li>)}
+                {props.descriptions.map((x, i) =>
+                    <li key={i} className="whitespace-pre-wrap">{x}</li>
+                )}
             </ul>
         </div>
     )
