@@ -94,7 +94,7 @@ function App() {
                     subtitle="The University of Hong Kong"
                     date="Sep 2018 - Jul 2022"
                     descriptions={[
-                        "First Class Honours   |   3x Dean's Honour List   |    Highest Semester GPA : 3.80 / 4.30",
+                        "First Class Honours   |   Dean's Honour List",
                         "Focus in Product Development and Manufacturing",
                         "Minor in Computer Science. Courses in Game and Mobile App Development, Artificial Intelligence",
                         "Team Captain of HKU Unmanned Aerial Systems Team, leading 30+ people in overseas competitions",
