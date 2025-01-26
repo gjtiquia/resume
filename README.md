@@ -6,6 +6,8 @@ also using TailwindCSS for more convenient styling of the resume
 
 deployed on [gjtiquia.com/resume](https://gjtiquia.com/resume)
 
+A4-sized PDF uploaded to Releases and can be downloaded at [gjtiquia.com/resume/download](https://gjtiquia.com/resume/download)
+
 ## Commands
 
 ```bash
