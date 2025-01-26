@@ -32,7 +32,7 @@ function App() {
             </section>
 
             <section className="mt-3 mb-3">
-                <p>Passionate in creating unique experiences through games, web apps and mobile apps. Whether it is the frontend or the backend, I find satisfaction in learning and solving problems creatively with others. I am an engineer, I solve real-world problems. I am also an artist, where my code is my canvas.</p>
+                <p>Passionate in creating unique experiences through games, web apps and mobile apps. Whether it is the frontend or the backend, I find satisfaction in learning and solving problems creatively with others. I am an engineer, I solve real-world problems. I am also an artist, where code is my canvas.</p>
             </section>
 
             <section className="my-3">
