@@ -6,7 +6,7 @@ import { MailIcon } from "./components/MailIcon"
 function App() {
     return (
         <article className="
-            h-dvh px-2 py-4
+            h-dvh px-2 pt-2
             prose prose-gray max-w-3xl
             prose-h1:mt-0 prose-h1:mb-4 prose-h1:text-5xl
             prose-h2:mt-0 prose-h2:mb-1 prose-h2:font-extrabold
@@ -31,11 +31,11 @@ function App() {
                 </div>
             </section>
 
-            <section className="mt-3 mb-3">
-                <p>Passionate in creating unique experiences through games, web apps and mobile apps. Whether it is the frontend or the backend, I find satisfaction in learning and solving problems creatively with others. I am an engineer, I solve real-world problems. I am also an artist, where code is my canvas.</p>
+            <section className="mt-2 mb-2">
+                <p>Passionate in creating unique experiences through games, web apps and mobile apps. I just really love learning and solving problems creatively with others, bringing both value to projects and growth within teams. As an engineer, I solve real-world problems. As an artist, code is my canvas and creative output.</p>
             </section>
 
-            <section className="my-3">
+            <section className="my-2">
                 <h2>Professional Work Experience</h2>
                 <Card
                     title="Game Developer & Code Architect"
@@ -87,7 +87,7 @@ function App() {
                 />
             </section>
 
-            <section className="my-3">
+            <section className="my-2">
                 <h2>Education</h2>
                 <Card
                     title="Bachelor of Mechanical Engineering"
@@ -102,23 +102,24 @@ function App() {
                 />
             </section>
 
-            <section className="my-3">
+            <section className="my-2">
                 <h2>Skills</h2>
                 <ul className="marker:text-gray-800">
-                    <li>Programming Languages: C#, JavaScript/TypeScript, C++, Python, HTML, CSS</li>
-                    <li>Web Technologies: React, Tailwind CSS, Express.js, Deno Fresh, HTMX, Postgres, Docker</li>
+                    <li>Programming Languages: C#, JavaScript/TypeScript, C++, C, Python, Java, HTML, CSS</li>
+                    <li>Technologies: React, React Native, Next.js, Tailwind CSS, Express.js, Hono, Deno, PostgreSQL, Docker</li>
                     <li>Game Development: Unity, Multiplayer Development, AI Behaviour Development</li>
+                    <li>Professional Skills: Project Management, Technical Team Leadership, Mentoring & Coaching, Hiring</li>
                 </ul>
             </section>
 
-            <section className="my-3">
+            <section className="my-2">
                 <h2>Hobbies</h2>
                 <ul className="marker:text-gray-800">
                     <li>Music, Gaming, Reading, Coding, Basketball, Photography</li>
                 </ul>
             </section>
 
-            <div className="py-1"></div>
+            <div className="pt-0.5"></div>
         </article>
     )
 }
